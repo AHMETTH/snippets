@@ -8,7 +8,7 @@ from tokenize import open as fopen
 
 class ExtendedVisitor(ast.NodeVisitor):
     def __init__(self, filename=None, *args, **kwargs):
-        super().__init__(*args, **kwargs)  # actualy does nothing
+        super().__init__(*args, **kwargs)
         self.filename = filename
         self.count = 0
 
